@@ -1,20 +1,22 @@
 # nuxt-debug-test
 
-## Build Setup
+## Steps to reproduce
 
+### Run Nuxt
 ```bash
 # install dependencies
 $ npm install
 
 # serve with hot reload at localhost:3000
 $ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+### Start debugger
+
+1) Launch VSCode and make sure Javascript in-preview debugger is not enabled. 
+2) Set breakpoint in `pages/index.vue` on any lines inside the `mounted` method.
+3) Run debugger with F5 and hit breakpoint
+4) Stop debugging
+5) Now enable Javascript in-preview debugger
+6) Run debugger and miss breakpoint completely
+
